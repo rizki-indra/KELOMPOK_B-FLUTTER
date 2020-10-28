@@ -1,8 +1,8 @@
 # KELOMPOK_B-FLUTTER
 Project Flutter
 
-Aplikasi AyoBerbagi.id , dimana kita bisa menampung bantuan dari para masyarakat
-untuk membantu warga yang mengalami kelaparan dan gizi buruk
+Aplikasi AyoBerbagi.id , merupakan media dimana kita bisa menampung donasi dari para masyarakat
+yang akan digunakan untuk membantu warga yang mengalami kelaparan dan gizi buruk.
 
 Anggota Kelompok :
 
