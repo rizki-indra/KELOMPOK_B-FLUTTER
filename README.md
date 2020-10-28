@@ -8,4 +8,4 @@ Anggota Kelompok :
 
 Rizki Indra Permana   182410102012
 Rifqie Ade Tama       182410102013
-Ahmad Choiruk Firdaus 182410102066
+Ahmad Choirul Firdaus 182410102066
