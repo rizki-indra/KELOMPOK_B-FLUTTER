@@ -1,14 +1,32 @@
 import 'package:flutter/material.dart';
 import 'package:vscode_android/constans.dart';
+import 'package:vscode_android/home_screen.dart';
 import 'package:vscode_android/main.dart';
 
 
 class LoginPage extends StatelessWidget {
 
- 
+   String email, password;
 
-
-
+  void _tampilkanalert(context) {
+    AlertDialog alertDialog = new AlertDialog(
+      content: new Container(
+        height: 200.0,
+        child: new Center(
+          child: new Text("Email atau Password Yang Anda Masukan Salah"),
+        ),
+      ),
+      actions: [
+        FlatButton(
+          child: Text('Tutup'),
+          onPressed: () {
+            Navigator.of(context).pop();
+          },
+        ),
+      ],
+    );
+    showDialog(context: context, child: alertDialog, barrierDismissible: false,);
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -105,6 +123,10 @@ class LoginPage extends StatelessWidget {
           ),
           style: TextStyle(color: Colors.blue),
           autofocus: false,
+          onChanged: (e) {
+            print('inp : $e');
+            email = e;
+          },
         ),
         Padding(
           padding: EdgeInsets.only(top: 12.0),
@@ -129,7 +151,10 @@ class LoginPage extends StatelessWidget {
           style: TextStyle(color: Colors.blue),
           obscureText: true,
           autofocus: false,
-
+          onChanged: (p) {
+            print('inp : $p');
+            password = p;
+          },
         ),
       ],
     );
@@ -156,6 +181,14 @@ class LoginPage extends StatelessWidget {
               textAlign: TextAlign.center,
             ),
           ),
+          onPressed: () {
+            if (email == 'Flutter'&& password == 'mobile') {
+              Navigator.pushNamed(context, HomeScreen.routeName);
+              
+            } else {
+              return _tampilkanalert(context);
+            }
+          }
         ),
       ],
     );
