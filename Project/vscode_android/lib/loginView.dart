@@ -2,11 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:vscode_android/constans.dart';
 import 'package:vscode_android/home_screen.dart';
 import 'package:vscode_android/main.dart';
-
+import 'package:vscode_android/Registerview.dart';
 
 class LoginPage extends StatelessWidget {
-
-   String email, password;
+  String email, password;
 
   void _tampilkanalert(context) {
     AlertDialog alertDialog = new AlertDialog(
@@ -25,7 +24,11 @@ class LoginPage extends StatelessWidget {
         ),
       ],
     );
-    showDialog(context: context, child: alertDialog, barrierDismissible: false,);
+    showDialog(
+      context: context,
+      child: alertDialog,
+      barrierDismissible: false,
+    );
   }
 
   @override
@@ -54,7 +57,6 @@ class LoginPage extends StatelessWidget {
       ),
     );
   }
-
 
   Widget iconLogin() {
     return Column(children: <Widget>[
@@ -159,41 +161,36 @@ class LoginPage extends StatelessWidget {
       ],
     );
   }
-  
 
   Widget buttonLogin(BuildContext context) {
     return Column(
-      
       children: <Widget>[
         Padding(
           padding: EdgeInsets.only(top: 16.0),
         ),
         RaisedButton(
-          color: ColorPalette.buttonColor,
-          child: Container(
-            decoration: BoxDecoration(
-                borderRadius: BorderRadius.all(Radius.circular(20.0))),
-            padding: EdgeInsets.symmetric(vertical: 10.0),
-            width: double.infinity,
-            child: Text(
-              'Login',
-              style: TextStyle(color: Colors.white),
-              textAlign: TextAlign.center,
+            color: ColorPalette.buttonColor,
+            child: Container(
+              decoration: BoxDecoration(
+                  borderRadius: BorderRadius.all(Radius.circular(20.0))),
+              padding: EdgeInsets.symmetric(vertical: 10.0),
+              width: double.infinity,
+              child: Text(
+                'Login',
+                style: TextStyle(color: Colors.white),
+                textAlign: TextAlign.center,
+              ),
             ),
-          ),
-          onPressed: () {
-            if (email == 'Flutter'&& password == 'mobile') {
-              Navigator.pushNamed(context, HomeScreen.routeName);
-              
-            } else {
-              return _tampilkanalert(context);
-            }
-          }
-        ),
+            onPressed: () {
+              if (email == 'Flutter' && password == 'mobile') {
+                Navigator.pushNamed(context, HomeScreen.routeName);
+              } else {
+                return _tampilkanalert(context);
+              }
+            }),
       ],
     );
   }
-
 
   Widget buttonRegister(BuildContext context) {
     return new Row(
@@ -213,6 +210,9 @@ class LoginPage extends StatelessWidget {
               fontSize: 11.0,
             ),
           ),
+          onPressed: () {
+            Navigator.pushNamed(context, RegisterPage.routeName);
+          },
         ),
       ],
     );
