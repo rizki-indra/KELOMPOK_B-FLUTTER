@@ -48,7 +48,7 @@ class _HomeScreenState extends State<HomeScreen> {
                           mainAxisAlignment: MainAxisAlignment.center,
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: <Widget>[
-                            Text('Kelompok 2 SDGS', style: TextStyle(fontFamily: 'Montserrat Medium', fontSize: 16, color: Colors.white),),
+                            Text('Kelompok 2_SDGS 2', style: TextStyle(fontFamily: 'Montserrat Medium', fontSize: 16, color: Colors.white),),
                             Text('Mobile TI Kelas A', style: TextStyle(fontFamily: 'Montserrat Medium', fontSize: 14, color: Colors.white),),
                           ],
                         )
