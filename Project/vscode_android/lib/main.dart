@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:vscode_android/loginView.dart';
+import 'package:vscode_android/home_screen.dart';
 
 void main() {
   var app = new MyApp();
@@ -18,6 +19,7 @@ class MyApp extends StatelessWidget {
       initialRoute: "/",
       routes: {
         "/" : (context) => LoginPage(),
+        HomeScreen.routeName : (context) => HomeScreen(),
       },
     );
   }
