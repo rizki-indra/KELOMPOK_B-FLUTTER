@@ -26,7 +26,7 @@ class _HomeScreenState extends State<HomeScreen> {
           Container(
             height: size.height * .3,
             decoration: BoxDecoration(
-              color: Colors.purple[400],
+              color: Colors.blueAccent[400],
               // image: DecorationImage(
               //     alignment: Alignment.topCenter,
               //     image: AssetImage('assets/images/top_header2.png')),
