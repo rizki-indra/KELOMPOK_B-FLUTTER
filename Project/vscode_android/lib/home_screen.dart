@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-
+import 'package:vscode_android/camera.dart';
 import 'package:vscode_android/constans.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -13,14 +13,15 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     var size = MediaQuery.of(context).size;
-
     return Scaffold(
       appBar: AppBar(
+        
         backgroundColor: ColorPalette.appBar,
         elevation: 0.0,
         title: new Text('AyoBerbagi.id', textAlign: TextAlign.center),
         centerTitle: true,
       ),
+
       body: Stack(
         children: <Widget>[
           Container(
@@ -89,7 +90,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                 children: <Widget>[
                                   SvgPicture.network(
                                     'https://www.flaticon.com/svg/static/icons/svg/3408/3408591.svg',
-                                    height: 100,
+                                    height: 90,
                                   ),
                                   Text('Dashboard',
                                       style: TextStyle(
@@ -108,7 +109,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                 children: <Widget>[
                                   SvgPicture.network(
                                     'https://www.flaticon.com/svg/static/icons/svg/3135/3135715.svg',
-                                    height: 100,
+                                    height: 90,
                                   ),
                                   Text('About US',
                                       style: TextStyle(
@@ -127,14 +128,21 @@ class _HomeScreenState extends State<HomeScreen> {
                                 children: <Widget>[
                                   SvgPicture.network(
                                     'https://www.flaticon.com/svg/static/icons/svg/3094/3094384.svg',
-                                    height: 100,
+                                    height: 90,
                                   ),
-                                  Text('Artikel',
-                                      style: TextStyle(
-                                        fontSize: 14,
-                                        fontFamily: 'Montserrat Medium',
-                                        color: Color.fromRGBO(63, 63, 63, 1),
-                                      )),
+                                  FlatButton(
+                                      child: Text(
+                                        'Kamera',
+                                        style: TextStyle(
+                                          fontSize: 14,
+                                          fontFamily: 'Montserrat Medium',
+                                          color: Color.fromRGBO(63, 63, 63, 1),
+                                        ),
+                                      ),
+                                      onPressed: () {
+                                        Navigator.pushNamed(
+                                            context, CameraScreen.routeName);
+                                      }),
                                 ],
                               )),
                           Card(
@@ -146,7 +154,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                 children: <Widget>[
                                   SvgPicture.network(
                                     'https://www.flaticon.com/svg/static/icons/svg/1041/1041872.svg',
-                                    height: 100,
+                                    height: 90,
                                   ),
                                   Text('Donasi',
                                       style: TextStyle(
@@ -165,7 +173,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                 children: <Widget>[
                                   SvgPicture.network(
                                     'https://www.flaticon.com/svg/static/icons/svg/3511/3511811.svg',
-                                    height: 100,
+                                    height: 90,
                                   ),
                                   Text('Contact US',
                                       style: TextStyle(
@@ -184,7 +192,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                 children: <Widget>[
                                   SvgPicture.network(
                                     'https://www.flaticon.com/svg/static/icons/svg/3617/3617045.svg',
-                                    height: 100,
+                                    height: 90,
                                   ),
                                   Text('Company',
                                       style: TextStyle(
