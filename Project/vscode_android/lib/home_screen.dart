@@ -15,13 +15,11 @@ class _HomeScreenState extends State<HomeScreen> {
     var size = MediaQuery.of(context).size;
     return Scaffold(
       appBar: AppBar(
-        
         backgroundColor: ColorPalette.appBar,
         elevation: 0.0,
         title: new Text('AyoBerbagi.id', textAlign: TextAlign.center),
         centerTitle: true,
       ),
-
       body: Stack(
         children: <Widget>[
           Container(
