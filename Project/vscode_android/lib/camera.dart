@@ -75,11 +75,12 @@ class _CameraScreenState extends State {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(
+      appBar: AppBar(
         backgroundColor: ColorPalette.appBar,
         elevation: 0.0,
         title: new Text('AyoBerbagi.id', textAlign: TextAlign.center),
-        centerTitle: true,),
+        centerTitle: true,
+      ),
       body: Container(
         child: SafeArea(
           child: Column(
