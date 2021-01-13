@@ -2,6 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:vscode_android/camera.dart';
 import 'package:vscode_android/constans.dart';
+import 'package:vscode_android/datauser.dart';
+import 'package:vscode_android/artikel.dart';
+import 'package:vscode_android/donasi.dart';
+import 'package:vscode_android/dataartikel.dart';
 
 class HomeScreen extends StatefulWidget {
   @override
@@ -26,9 +30,7 @@ class _HomeScreenState extends State<HomeScreen> {
             height: size.height * .3,
             decoration: BoxDecoration(
               color: Colors.blueAccent[400],
-              // image: DecorationImage(
-              //     alignment: Alignment.topCenter,
-              //     image: AssetImage('assets/images/top_header2.png')),
+
             ),
           ),
           SafeArea(
@@ -109,12 +111,19 @@ class _HomeScreenState extends State<HomeScreen> {
                                     'https://www.flaticon.com/svg/static/icons/svg/3135/3135715.svg',
                                     height: 90,
                                   ),
-                                  Text('About US',
-                                      style: TextStyle(
-                                        fontSize: 14,
-                                        fontFamily: 'Montserrat Medium',
-                                        color: Color.fromRGBO(63, 63, 63, 1),
-                                      )),
+                                  FlatButton(
+                                      child: Text(
+                                        'Data User',
+                                        style: TextStyle(
+                                          fontSize: 14,
+                                          fontFamily: 'Montserrat Medium',
+                                          color: Color.fromRGBO(63, 63, 63, 1),
+                                        ),
+                                      ),
+                                      onPressed: () {
+                                        Navigator.pushNamed(
+                                            context, GetDataUser.routeName);
+                                      }),
                                 ],
                               )),
                           Card(
@@ -154,12 +163,19 @@ class _HomeScreenState extends State<HomeScreen> {
                                     'https://www.flaticon.com/svg/static/icons/svg/1041/1041872.svg',
                                     height: 90,
                                   ),
-                                  Text('Donasi',
-                                      style: TextStyle(
-                                        fontSize: 14,
-                                        fontFamily: 'Montserrat Medium',
-                                        color: Color.fromRGBO(63, 63, 63, 1),
-                                      )),
+                                  FlatButton(
+                                      child: Text(
+                                        'Tambah Donasi',
+                                        style: TextStyle(
+                                          fontSize: 14,
+                                          fontFamily: 'Montserrat Medium',
+                                          color: Color.fromRGBO(63, 63, 63, 1),
+                                        ),
+                                      ),
+                                      onPressed: () {
+                                        Navigator.pushNamed(
+                                            context, Donasi.routeName);
+                                      }),
                                 ],
                               )),
                           Card(
@@ -173,12 +189,19 @@ class _HomeScreenState extends State<HomeScreen> {
                                     'https://www.flaticon.com/svg/static/icons/svg/3511/3511811.svg',
                                     height: 90,
                                   ),
-                                  Text('Contact US',
-                                      style: TextStyle(
-                                        fontSize: 14,
-                                        fontFamily: 'Montserrat Medium',
-                                        color: Color.fromRGBO(63, 63, 63, 1),
-                                      )),
+                                  FlatButton(
+                                      child: Text(
+                                        'Tambah Artikel',
+                                        style: TextStyle(
+                                          fontSize: 14,
+                                          fontFamily: 'Montserrat Medium',
+                                          color: Color.fromRGBO(63, 63, 63, 1),
+                                        ),
+                                      ),
+                                      onPressed: () {
+                                        Navigator.pushNamed(
+                                            context, Artikel.routeName);
+                                      }),
                                 ],
                               )),
                           Card(
@@ -192,12 +215,19 @@ class _HomeScreenState extends State<HomeScreen> {
                                     'https://www.flaticon.com/svg/static/icons/svg/3617/3617045.svg',
                                     height: 90,
                                   ),
-                                  Text('Company',
-                                      style: TextStyle(
-                                        fontSize: 14,
-                                        fontFamily: 'Montserrat Medium',
-                                        color: Color.fromRGBO(63, 63, 63, 1),
-                                      )),
+                                  FlatButton(
+                                      child: Text(
+                                        'Data Artikel',
+                                        style: TextStyle(
+                                          fontSize: 14,
+                                          fontFamily: 'Montserrat Medium',
+                                          color: Color.fromRGBO(63, 63, 63, 1),
+                                        ),
+                                      ),
+                                      onPressed: () {
+                                        Navigator.pushNamed(
+                                            context, DataArtikel.routeName);
+                                      }),
                                 ],
                               )),
                         ],
