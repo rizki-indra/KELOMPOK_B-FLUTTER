@@ -88,35 +88,16 @@ class _DataDonasiState extends State<DataDonasi> {
                       child: Column(
                         children: [
                           ListTile(
-                            leading: Icon(Icons.local_post_office),
+                            leading: Icon(Icons.local_atm),
                             title:
-                                const Text('Atasi Kelaparan Dalam Acara SDGS'),
+                                const Text('2.000.000'),
                             subtitle: Text(
-                              'Penulis : Rifqie Indra Firdaus',
+                              'Donatur : Rifqie Indra Firdaus',
                               style: TextStyle(
                                   color: Colors.black.withOpacity(0.6)),
                             ),
                           ),
-                          Padding(
-                            padding: const EdgeInsets.all(16.0),
-                            child: Text(
-                              'Tanpa kelaparan (zero hunger) adalah salah satu poin SDGs yang menarik karena ketika target-targetnya tercapai, artinya tidak ada seorang pun yang kekurangan gizi, maupun yang mengalami malnutrisi.',
-                              style: TextStyle(
-                                  color: Colors.black.withOpacity(0.6)),
-                            ),
-                          ),
-                          ButtonBar(
-                            alignment: MainAxisAlignment.start,
-                            children: [
-                              FlatButton(
-                                textColor: const Color(0xFF6200EE),
-                                onPressed: () {
-                                  // Perform some action
-                                },
-                                child: const Text('Lihat Selengkapnya'),
-                              ),
-                            ],
-                          ),
+                         
                           Image.asset('assets/images/card-sample-image.jpeg'),
                         ],
                       ),
@@ -127,35 +108,16 @@ class _DataDonasiState extends State<DataDonasi> {
                       child: Column(
                         children: [
                           ListTile(
-                            leading: Icon(Icons.local_post_office),
+                            leading: Icon(Icons.local_atm),
                             title:
-                                const Text('Atasi Kelaparan Dalam Acara SDGS'),
+                                const Text('5.000.000'),
                             subtitle: Text(
-                              'Penulis : Rifqie Indra Firdaus',
+                              'Donatur : Rifqie Indra Firdaus',
                               style: TextStyle(
                                   color: Colors.black.withOpacity(0.6)),
                             ),
                           ),
-                          Padding(
-                            padding: const EdgeInsets.all(16.0),
-                            child: Text(
-                              'Tanpa kelaparan (zero hunger) adalah salah satu poin SDGs yang menarik karena ketika target-targetnya tercapai, artinya tidak ada seorang pun yang kekurangan gizi, maupun yang mengalami malnutrisi.',
-                              style: TextStyle(
-                                  color: Colors.black.withOpacity(0.6)),
-                            ),
-                          ),
-                          ButtonBar(
-                            alignment: MainAxisAlignment.start,
-                            children: [
-                              FlatButton(
-                                textColor: const Color(0xFF6200EE),
-                                onPressed: () {
-                                  // Perform some action
-                                },
-                                child: const Text('Lihat Selengkapnya'),
-                              ),
-                            ],
-                          ),
+                          
                           Image.asset('assets/images/card-sample-image.jpeg'),
                         ],
                       ),
