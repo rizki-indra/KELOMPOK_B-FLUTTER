@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:vscode_android/camera.dart';
 import 'package:vscode_android/constans.dart';
+import 'package:vscode_android/datadonasi.dart';
 import 'package:vscode_android/datauser.dart';
 import 'package:vscode_android/artikel.dart';
 import 'package:vscode_android/donasi.dart';
@@ -227,6 +228,32 @@ class _HomeScreenState extends State<HomeScreen> {
                                       onPressed: () {
                                         Navigator.pushNamed(
                                             context, DataArtikel.routeName);
+                                      }),
+                                ],
+                              )),
+                              Card(
+                              shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(10)),
+                              elevation: 4,
+                              child: Column(
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                children: <Widget>[
+                                  SvgPicture.network(
+                                    'https://www.flaticon.com/svg/static/icons/svg/1041/1041872.svg',
+                                    height: 90,
+                                  ),
+                                  FlatButton(
+                                      child: Text(
+                                        'Data Donasi',
+                                        style: TextStyle(
+                                          fontSize: 14,
+                                          fontFamily: 'Montserrat Medium',
+                                          color: Color.fromRGBO(63, 63, 63, 1),
+                                        ),
+                                      ),
+                                      onPressed: () {
+                                        Navigator.pushNamed(
+                                            context, DataDonasi.routeName);
                                       }),
                                 ],
                               )),

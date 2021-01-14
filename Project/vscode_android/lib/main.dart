@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:vscode_android/camera.dart';
+import 'package:vscode_android/datadonasi.dart';
 import 'package:vscode_android/datauser.dart';
 import 'package:vscode_android/loginView.dart';
 import 'package:vscode_android/home_screen.dart';
@@ -30,7 +31,8 @@ class MyApp extends StatelessWidget {
         GetDataUser.routeName: (context) => GetDataUser(),
         HomeScreen.routeName: (context) => HomeScreen(),
         RegisterPage.routeName: (context) => RegisterPage(),
-        CameraScreen.routeName: (context) => CameraScreen()
+        CameraScreen.routeName: (context) => CameraScreen(),
+        DataDonasi.routeName: (context) => DataDonasi()
       },
     );
   }

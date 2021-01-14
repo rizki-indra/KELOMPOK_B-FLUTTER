@@ -104,6 +104,18 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "http",
+      "rootUri": "file:///C:/src/flutter/.pub-cache/hosted/pub.dartlang.org/http-0.12.2",
+      "packageUri": "lib/",
+      "languageVersion": "2.4"
+    },
+    {
+      "name": "http_parser",
+      "rootUri": "file:///C:/src/flutter/.pub-cache/hosted/pub.dartlang.org/http_parser-3.1.4",
+      "packageUri": "lib/",
+      "languageVersion": "2.3"
+    },
+    {
       "name": "intl",
       "rootUri": "file:///C:/src/flutter/.pub-cache/hosted/pub.dartlang.org/intl-0.16.1",
       "packageUri": "lib/",
@@ -166,6 +178,12 @@
     {
       "name": "path_provider_windows",
       "rootUri": "file:///C:/src/flutter/.pub-cache/hosted/pub.dartlang.org/path_provider_windows-0.0.4+3",
+      "packageUri": "lib/",
+      "languageVersion": "2.1"
+    },
+    {
+      "name": "pedantic",
+      "rootUri": "file:///C:/src/flutter/.pub-cache/hosted/pub.dartlang.org/pedantic-1.9.0",
       "packageUri": "lib/",
       "languageVersion": "2.1"
     },
@@ -267,7 +285,7 @@
     },
     {
       "name": "xdg_directories",
-      "rootUri": "file:///C:/src/flutter/.pub-cache/hosted/pub.dartlang.org/xdg_directories-0.1.2",
+      "rootUri": "file:///C:/src/flutter/.pub-cache/hosted/pub.dartlang.org/xdg_directories-0.1.0",
       "packageUri": "lib/",
       "languageVersion": "2.3"
     },
@@ -284,7 +302,7 @@
       "languageVersion": "2.7"
     }
   ],
-  "generated": "2021-01-13T00:24:04.834699Z",
+  "generated": "2021-01-14T12:27:12.390720Z",
   "generator": "pub",
   "generatorVersion": "2.12.0-133.2.beta"
 }
