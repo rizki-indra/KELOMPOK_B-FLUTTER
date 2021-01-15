@@ -104,7 +104,7 @@ class _DataArtikelState extends State<DataArtikel> {
                               
                             ],
                           ),
-                          Image.asset('assets/images/card-sample-image.jpeg'),
+                          Image.asset('assets/images/card-sample-image-2.jpg'),
                         ],
                       ),
                     ),
@@ -142,7 +142,7 @@ class _DataArtikelState extends State<DataArtikel> {
                               
                             ],
                           ),
-                          Image.asset('assets/images/card-sample-image.jpeg'),
+                          Image.asset('assets/images/card-sample-image-2.jpg'),
                         ],
                       ),
                     ),
